@@ -1,26 +1,69 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ebook – 50 Ideias de Negócio Rentáveis</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
 
-    <section class="hero">
-        <img src="file_000000001ec071fd.jpg" alt="Capa Ebook" class="cover">
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: white;
+}
 
-        <h1>QUERES COMEÇAR UM NEGÓCIO EM ANGOLA?</h1>
+.hero {
+    position: relative;
+    height: 80vh;
+    background: url('assets/ebook-capa.jpg') center/cover no-repeat;
+}
 
-        <p>Eu preparei um ebook com <strong>50 ideias de negócio realmente aplicáveis em Angola</strong>.</p>
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
 
-        <a class="btn" href="https://wa.me/244972898156?text=Quero%20o%20ebook%2050%20ideias%20de%20negocio">
-            ENVIAR MENSAGEM
-        </a>
+.content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    text-align: center;
+    top: 30%;
+}
 
-        <p class="number">+244 972 898 156</p>
-    </section>
+h1 {
+    font-size: 2.5rem;
+    color: #d4af37;
+}
 
-</body>
-</html>
+.btn {
+    background: #d4af37;
+    padding: 12px 25px;
+    color: black;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.buy-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.payment-box {
+    background: #111;
+    padding: 30px;
+    border: 2px solid #d4af37;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 450px;
+    margin: 20px auto;
+}
+
+.qr img {
+    width: 180px;
+    margin: 15px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    background: #111;
+}
