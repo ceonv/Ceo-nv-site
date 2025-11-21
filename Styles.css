@@ -38,3 +38,32 @@ h1{color:white;font-size:32px;margin:0 0 12px}
 .muted{color:#a9a9a9;font-size:13px}
 .sitefoot{padding:18px;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,0.02);margin-top:30px}
 @media(max-width:900px){.hero-inner{flex-direction:column}.hero-right{width:100%}.product{flex-direction:column}.payment-wrap{flex-direction:column}}
+body {
+  background: #000;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.menu {
+  background: #111;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.menu h1 {
+  margin: 0;
+  color: #f5c542;
+}
+
+.menu nav a {
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu nav a:hover {
+  color: #f5c542;
+}
