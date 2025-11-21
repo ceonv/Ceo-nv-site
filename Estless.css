@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+header {
+    background: #111;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.hero {
+    padding: 60px 20px;
+    background: url('https://images.pexels.com/photos/5561913/pexels-photo-5561913.jpeg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+}
+
+.btn {
+    background: #ffbf00;
+    color: #000;
+    padding: 14px 25px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.product {
+    background: #fff;
+    padding: 25px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 450px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
