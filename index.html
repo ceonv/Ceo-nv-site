@@ -1,45 +1,144 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CEO NV - Página Inicial</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 20px;
-            background: #ffffff;
-        }
-
-        img {
-            width: 100%;
-            max-width: 500px;
-            border-radius: 10px;
-            margin-top: 20px;
-        }
-
-        h1 {
-            color: #d10000;
-        }
-
-        p {
-            font-size: 18px;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Digital Store NV — Chegou a Tua Hora de Vencer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-    <h1>Bem-vindo ao CEO NV</h1>
-    <p>O teu sucesso começa agora.</p>
+<header class="topbar">
+  <div class="brand">Digital Store NV</div>
+  <nav class="nav"><a href="#ebook">Ebook</a><a href="#beneficios">Benefícios</a><a href="#autor">Sobre</a><a href="#pagamento">Pagar</a></nav>
+</header>
 
-    <!-- A tua imagem principal -->
-    <img src="file_000000000057c71f594341f33c89d09e9.png"
-     alt="Capa do Ebook"
-     style="width: 100%; max-width: 700px; display:block; margin:auto;">
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <h1>CHEGOU A TUA HORA DE VENCER</h1>
+      <p class="tagline">50 IDEIAS DE NEGÓCIO aplicáveis em Angola — passo a passo para começar a lucrar.</p>
+      <div class="price">Preço de lançamento: <strong>5.000 Kz</strong></div>
+      <div class="cta-row">
+        <a class="btn btn-gold" href="#pagamento">PAGAR AGORA — 5.000 Kz</a>
+        <a class="btn btn-outline" href="https://wa.me/244972898156?text=Quero+comprar+o+Ebook+Chegou+a+Tua+Hora+de+Vencer">Enviar Mensagem</a>
+      </div>
+      <ul class="highlights">
+        <li>50 ideias práticas e testadas</li>
+        <li>Baixo investimento inicial</li>
+        <li>Guias passo a passo para implementar</li>
+      </ul>
+    </div>
+    <div class="hero-right">
+      <img src="file_000000000057c71f594341f33c89d09e9.png" alt="Capa do Ebook" class="cover" />
+    </div>
+  </div>
+</section>
+
+<!-- EBOOK -->
+<section id="ebook" class="section card">
+  <div class="container">
+    <h2>Ebook — Chegou a Tua Hora de Vencer</h2>
+    <p>Um manual prático com 50 ideias de negócio adaptadas à realidade de Angola, com passos e modelos para começar já.</p>
+
+    <div class="product">
+      <img src="file_000000000057c71f594341f33c89d09e9.png" alt="Capa do Ebook" />
+      <div class="product-info">
+        <h3>O que tens neste ebook</h3>
+        <ul>
+          <li>Modelos simples de execução</li>
+          <li>Exemplos reais em Angola</li>
+          <li>Checklist para começar em 7 dias</li>
+        </ul>
+        <div class="price-block">
+          <div class="price-big">5.000 Kz</div>
+          <a class="btn btn-gold" href="#pagamento">Comprar pelo Multicaixa</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFICIOS -->
+<section id="beneficios" class="section">
+  <div class="container">
+    <h2>Por que este ebook funciona</h2>
+    <div class="benefits-grid">
+      <div class="benefit">Prático e direto</div>
+      <div class="benefit">Focado no mercado angolano</div>
+      <div class="benefit">Baixo custo de implementação</div>
+      <div class="benefit">Resultados rápidos</div>
+    </div>
+  </div>
+</section>
+
+<!-- AUTOR -->
+<section id="autor" class="section card">
+  <div class="container author-row">
+    <img src="file_000000000057c71f594341f33c89d09e9.png" alt="Autor" class="author-photo" />
+    <div>
+      <h3>Narciso Virgílio Salgueiro — CEO NV</h3>
+      <p>Sou empreendedor angolano e criador deste guia prático. A minha missão é ajudar outros a gerarem rendimento diário com ideias simples.</p>
+      <a class="btn btn-outline" href="contactos.html">Contactar</a>
+    </div>
+  </div>
+</section>
+
+<!-- PAGAMENTO -->
+<section id="pagamento" class="section card payment-section">
+  <div class="container">
+    <h2>Pagamento — Multicaixa Express</h2>
+
+    <div class="payment-wrap">
+      <div class="payment-instructions">
+        <p><strong>Beneficiário:</strong> Narciso Virgílio Salgueiro</p>
+        <p><strong>Conta (Multicaixa Express):</strong> <strong>972 898 156</strong></p>
+        <p><strong>Valor:</strong> 5.000 Kz</p>
+        <p><strong>Descrição:</strong> Pagamento do Ebook — Chegou a Tua Hora de Vencer</p>
+        <p>Depois de pagar, volta aqui e envia o comprovativo no formulário ao lado — validamos e enviamos o link de download.</p>
+      </div>
+
+      <div class="payment-form">
+        <label>Nome completo</label>
+        <input id="buyerName" type="text" placeholder="Seu nome completo" />
+        <label>Upload do comprovativo</label>
+        <input id="proofFile" type="file" accept="image/*" />
+        <button id="sendProof" class="btn btn-gold">ENVIAR COMPROVATIVO</button>
+
+        <p class="muted">Após validação vamos enviar o link do ebook para teu WhatsApp.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THANKS (hidden until comprovativo) -->
+<section id="thanks" class="section card" style="display:none;">
+  <div class="container">
+    <h2>Obrigado — Pedido recebido</h2>
+    <p>Vamos validar o comprovativo. Se estiver tudo correcto, o link de download será enviado pelo WhatsApp.</p>
+    <a id="downloadLink" class="btn btn-outline" href="assets/ebook.pdf" download>Baixar Ebook (após validação)</a>
+  </div>
+</section>
+
+<footer class="sitefoot">
+  <div>© 2025 Digital Store NV</div>
+  <div>Contacto: <a href="https://wa.me/244972898156">+244 972 898 156</a></div>
+</footer>
+
+<script>
+document.getElementById('sendProof').addEventListener('click', function(){
+  var name = document.getElementById('buyerName').value.trim();
+  var file = document.getElementById('proofFile').files[0];
+  if(!name){ alert('Escreve o teu nome completo.'); return; }
+  if(!file){ alert('Anexa o comprovativo do pagamento.'); return; }
+
+  // Simulação de envio / validação (no site real, envia para servidor)
+  alert('Comprovativo recebido. Em breve validaremos e enviaremos o link via WhatsApp.');
+  document.getElementById('thanks').style.display = 'block';
+  document.getElementById('thanks').scrollIntoView({behavior:'smooth'});
+});
+</script>
 
 </body>
 </html>
