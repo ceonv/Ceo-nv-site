@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Contactos - Digital Store NV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    Contactos - Digital Store NV
+</header>
+
+<section>
+    <h2>Fala connosco</h2>
+
+    <div class="product">
+        <p><strong>WhatsApp:</strong> +244 972 898 156</p>
+        <a class="btn" href="https://wa.me/244972898156">Enviar mensagem</a>
+
+        <br><br>
+
+        <p><strong>Email:</strong> narciso1122@gmail.com</p>
+    </div>
+</section>
+
+</body>
+</html>
