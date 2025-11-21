@@ -1,45 +1,16 @@
-
-/* Estilo geral */
 body {
     font-family: Arial, sans-serif;
-    background: #f4f4f4;
     margin: 0;
-    padding: 0;
+    padding: 20px;
+    text-align: center;
+    background: #f5f5f5;
 }
 
-/* Título principal */
 h1 {
-    text-align: center;
-    color: #111;
-    margin-top: 40px;
+    color: #222;
 }
 
-/* Parágrafo de boas-vindas */
 p {
-    text-align: center;
-    color: #333;
+    color: #444;
     font-size: 18px;
-}
-
-/* Imagem principal */
-img {
-    border-radius: 12px;
-    box-shadow: 0px 4px 20px rgba(0,0,0,0.2);
-}
-
-/* Botão de comprar */
-a {
-    transition: 0.3s;
-}
-
-a:hover {
-    opacity: 0.8;
-}
-
-/* Rodapé */
-footer {
-    background: #111;
-    color: white;
-    padding: 15px;
-    margin-top: 40px;
 }
