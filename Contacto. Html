@@ -1,28 +1,36 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <title>Contactos - Digital Store NV</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
 
-<header>
-    Contactos - Digital Store NV
-</header>
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+}
 
-<section>
-    <h2>Fala connosco</h2>
+header {
+  background: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
 
-    <div class="product">
-        <p><strong>WhatsApp:</strong> +244 972 898 156</p>
-        <a class="btn" href="https://wa.me/244972898156">Enviar mensagem</a>
+.hero {
+  text-align: center;
+  padding: 20px;
+}
 
-        <br><br>
+.hero img {
+  width: 90%;
+  max-width: 380px;
+  border-radius: 12px;
+}
 
-        <p><strong>Email:</strong> narciso1122@gmail.com</p>
-    </div>
-</section>
-
-</body>
-</html>
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 22px;
+  background: #000;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 18px;
+}
