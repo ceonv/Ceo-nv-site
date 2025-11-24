@@ -1,0 +1,10 @@
+# Digital Store NV - Página de Vendas
+
+Instruções:
+1. Colar `index.html`, `styles.css`, `script.js` na raiz do repositório.
+2. Certificar que a imagem da capa está na raiz com o nome:
+   `file_00000000057c71f594341f33c89d09e9.png`
+3. Se tens o e-book em PDF, criar a pasta `assets` e enviar `assets/ebook.pdf`.
+4. Commit & push para a branch `main`.
+5. Ativar Pages: Settings → Pages → main / root.
+6. Testar o link: https://ceonv.github.io/Ceo-nv-site/
