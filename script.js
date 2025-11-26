@@ -1,27 +1,4 @@
-// Abre WhatsApp com mensagem pronta
-document.querySelectorAll('.btn-outline')[0]?.addEventListener('click', function(e){
-  // ensure external link opens
-});
-
-// Envia comprovativo (simulação)
-document.getElementById('sendProof')?.addEventListener('click', function(){
-  var name = document.getElementById('buyerName').value.trim();
-  var file = document.getElementById('proofFile').files[0];
-  if(!name){ alert('Escreve o teu nome completo.'); return; }
-  if(!file){ alert('Anexa o comprovativo do pagamento.'); return; }
-
-  // Simulação: mostrar secção de "thanks" — num site real, envias para backend
-  alert('Comprovativo recebido. Iremos validar e enviar o link via WhatsApp.');
-  document.getElementById('thanks').style.display = 'block';
-  document.getElementById('thanks').scrollIntoView({behavior:'smooth'});
-});
-<script>
 class BotVendas {
-    constructor() {
-        this.messages = [];
-        this.botName = "Assistente ADM";
-    }
-
     enviarMensagem(texto, autor = "bot") {
         const chat = document.getElementById("chat");
         const msg = document.createElement("div");
@@ -41,24 +18,23 @@ class BotVendas {
 
         if (texto.includes("preço") || texto.includes("custa")) {
             this.enviarMensagem("O Ebook custa **5.000 Kz**.");
-            this.enviarMensagem("Pagamento via **Multicaixa Express** no número: **+244 972 898 156**."); 
-            this.enviarMensagem("Após pagar, envia o comprovativo e recebes o Ebook imediatamente.");
+            this.enviarMensagem("Pagamento via Multicaixa Express no número: +244 972 898 156.");
+            this.enviarMensagem("Após pagar, envia o comprovativo e recebes o Ebook automaticamente.");
             return;
         }
 
         if (texto.includes("comprar") || texto.includes("ebook")) {
-            this.enviarMensagem("Para comprar, faz o pagamento MCX para: **+244 972 898 156**.");
-            this.enviarMensagem("Depois envia o comprovativo e recebes o Ebook automaticamente.");
+            this.enviarMensagem("Para comprar, paga via MCX: +244 972 898 156.");
+            this.enviarMensagem("Depois manda o comprovativo e recebes o Ebook.");
             return;
         }
 
         if (texto.includes("como funciona") || texto.includes("explica")) {
-            this.enviarMensagem("O Ebook ensina estratégias reais e práticas para ganhar dinheiro online em Angola.");
-            this.enviarMensagem("Inclui aulas passo a passo e métodos testados.");
+            this.enviarMensagem("Este Ebook ensina métodos reais para ganhar dinheiro online em Angola, passo a passo.");
             return;
         }
 
-        this.enviarMensagem("Não entendi bem, mas posso ajudar! Pergunta: preço, comprar, ebook, ou como funciona?");
+        this.enviarMensagem("Não entendi bem… podes perguntar: preço, comprar, ebook, como funciona.");
     }
 }
 
@@ -69,10 +45,10 @@ window.onload = () => bot.iniciar();
 function enviar() {
     const input = document.getElementById("mensagem");
     const texto = input.value;
+
     if (texto.trim() === "") return;
 
     bot.enviarMensagem(texto, "user");
     bot.responder(texto);
     input.value = "";
 }
-</script>
