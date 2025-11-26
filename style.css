@@ -1,94 +1,40 @@
 :root{
-  --bg:#050505; --card:#0f0f10; --gold:#D4AF37; --muted:#bdbdbd; --accent:#b80000;
+  --red:#e21b12;
+  --dark:#111;
+  --bg:#fafafa;
+  --accent:#f6c02a;
 }
 *{box-sizing:border-box}
-body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:var(--bg);color:var(--muted);-webkit-font-smoothing:antialiased}
-.container{max-width:1100px;margin:0 auto;padding:0 18px}
-.topbar{background:rgba(0,0,0,0.6);border-bottom:1px solid rgba(255,255,255,0.03)}
-.topbar .container{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
-.brand{color:var(--gold);font-weight:800;font-size:18px}
-.menu a{color:#ddd;margin-left:14px;text-decoration:none;font-weight:600}
-.hero{padding:48px 0;background:linear-gradient(180deg, rgba(0,0,0,0.12), transparent)}
-.hero-inner{display:flex;gap:30px;align-items:center;flex-wrap:wrap}
-.hero-left{flex:1;min-width:260px}
-.hero-right{width:360px}
-h1,h2,h3{color:white;margin:0 0 12px}
-.tagline{color:var(--muted);margin-bottom:12px}
-.price{color:var(--gold);font-weight:800;font-size:20px;margin-bottom:12px}
-.cta-row{margin-top:12px}
-.btn{display:inline-block;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:800;cursor:pointer}
-.btn-gold{background:var(--gold);color:#080808}
-.btn-outline{border:1px solid rgba(255,255,255,0.06);color:#fff;padding:10px 16px;background:transparent}
-.highlights{list-style:none;padding:10px 0 0;margin:0;color:var(--muted)}
-.section{padding:36px 0}
-.card{background:var(--card);border-radius:12px;padding:20px;border:1px solid rgba(255,255,255,0.02);margin:20px auto}
-.product{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
-.product-cover{width:220px;border-radius:10px;box-shadow:0 12px 40px rgba(0,0,0,0.6)}
-.product-info{flex:1;color:var(--muted)}
-.price-big{color:var(--gold);font-size:24px;font-weight:800}
-.benefits-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:12px}
-.benefit{background:#0b0b0b;padding:18px;border-radius:8px;color:#ddd}
-.author-row{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
-.author-photo{width:120px;height:120px;border-radius:50%;object-fit:cover;border:3px solid rgba(212,175,55,0.08)}
-.payment-grid{display:flex;gap:20px;flex-wrap:wrap;align-items:flex-start}
-.payment-instructions{flex:1;min-width:260px}
-.payment-form{flex:1;min-width:260px}
-.payment-form input{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--muted);margin-bottom:8px}
-.muted{color:#a9a9a9;font-size:13px}
-.sitefoot{padding:18px;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,0.02);margin-top:30px}
-@media(max-width:900px){.hero-inner{flex-direction:column}.hero-right{width:100%}.product{flex-direction:column}.payment-grid{flex-direction:column}}
-/* BOT DE VENDAS */
-#chat-container {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 300px;
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0px 4px 20px rgba(0,0,0,0.2);
-    overflow: hidden;
-    border: 1px solid #ddd;
-}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial; margin:0; background:var(--bg); color:var(--dark); line-height:1.45}
+.container{max-width:900px;margin:0 auto;padding:18px}
+.site-header{background:#fff;border-bottom:1px solid #eee}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.site-header h1{font-size:20px;margin:10px 0}
+.nav a{margin-left:12px;color:#1565c0;text-decoration:none;font-weight:600}
 
-#chat {
-    height: 300px;
-    overflow-y: auto;
-    padding: 10px;
-}
+.chat-bar{display:flex;justify-content:space-between;align-items:center;padding:10px;background:linear-gradient(90deg,#fff,#fff);border-bottom:1px solid #eee}
+.chat-bar .chat-text{font-size:14px}
+.btn{display:inline-block;padding:10px 16px;border-radius:8px;background:var(--red);color:#fff;text-decoration:none;font-weight:700;box-shadow:0 8px 20px rgba(0,0,0,.08)}
+.btn.small{padding:6px 10px;font-size:13px}
+.btn.large{padding:14px 22px;font-size:18px;border-radius:10px}
+.btn.outline{background:transparent;color:var(--red);border:2px solid var(--red);padding:10px 18px}
 
-.bot-msg {
-    background: #f1f1f1;
-    padding: 10px;
-    margin: 6px 0;
-    border-radius: 10px;
-    font-size: 14px;
-}
+.hero{background:#fff;padding:20px;border-radius:8px;margin:18px 0}
+.hero h2{font-size:28px;margin:8px 0}
+.lead{font-size:16px;color:#333}
 
-.user-msg {
-    background: #c8e4ff;
-    padding: 10px;
-    margin: 6px 0;
-    border-radius: 10px;
-    text-align: right;
-    font-size: 14px;
-}
+.price{margin:10px 0;font-size:16px}
 
-#chat-input {
-    display: flex;
-    border-top: 1px solid #ddd;
-}
+.section{background:#fff;padding:18px;border-radius:8px;margin:18px 0}
+.cover-wrap{text-align:center;margin:10px 0}
+.cover{width:100%;max-width:480px;border-radius:12px;box-shadow:0 8px 22px rgba(0,0,0,.12)}
 
-#mensagem {
-    flex: 1;
-    padding: 10px;
-    border: none;
-    outline: none;
-}
+.site-footer{padding:18px;text-align:center;color:#555;font-size:15px;margin-top:28px}
 
-#chat-input button {
-    background: #007bff;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
+/* responsive */
+@media(min-width:900px){
+  .hero{display:flex;align-items:center;gap:24px}
+  .hero .lead{flex:1}
+  .cover{max-width:340px}
 }
+script.js — cria/edita com este JS:
