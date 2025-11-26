@@ -52,3 +52,32 @@ function enviar() {
     bot.responder(texto);
     input.value = "";
 }
+// Configurações (altera se precisares)
+const WHATSAPP_NUMBER = "244972898156"; // sem +
+const WHATSAPP_MESSAGE = encodeURIComponent("Olá! Quero comprar o Ebook 'Como Ganhar Dinheiro Online' — Loja Oficial NV. Confirma por favor o próximo passo.");
+
+// Elementos
+const whatsappBtn = document.getElementById('whatsappPay');
+const chatBtn = document.getElementById('chatBtn');
+const sendProof = document.getElementById('sendProof');
+
+// Gera link para WA
+function buildWaLink(number, text){
+  return `https://wa.me/${number}?text=${text}`;
+}
+
+// Ao carregar seta o link
+if(whatsappBtn){
+  whatsappBtn.href = buildWaLink(WHATSAPP_NUMBER, WHATSAPP_MESSAGE);
+  whatsappBtn.target = "_blank";
+}
+if(chatBtn){
+  chatBtn.addEventListener('click', ()=> {
+    window.open(buildWaLink(WHATSAPP_NUMBER, WHATSAPP_MESSAGE), '_blank');
+  });
+}
+
+// Se quiseres, podes também abrir o formulário num popup (se tiveres link curto)
+if(sendProof){
+  // deixa como está — o href já aponta para o Google Form
+}
