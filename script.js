@@ -41,13 +41,13 @@ class BotVendas {
 
         if (texto.includes("preço") || texto.includes("custa")) {
             this.enviarMensagem("O Ebook custa **5.000 Kz**.");
-            this.enviarMensagem("Pagamento via **Multicaixa Express** no número: **+244 99 999 9999**."); 
+            this.enviarMensagem("Pagamento via **Multicaixa Express** no número: **+244 972 898 156**."); 
             this.enviarMensagem("Após pagar, envia o comprovativo e recebes o Ebook imediatamente.");
             return;
         }
 
         if (texto.includes("comprar") || texto.includes("ebook")) {
-            this.enviarMensagem("Para comprar, faz o pagamento MCX para: **+244 99 999 9999**.");
+            this.enviarMensagem("Para comprar, faz o pagamento MCX para: **+244 972 898 156**.");
             this.enviarMensagem("Depois envia o comprovativo e recebes o Ebook automaticamente.");
             return;
         }
