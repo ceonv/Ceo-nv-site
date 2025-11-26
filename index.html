@@ -1,151 +1,90 @@
-
-!doctype html>
+<!doctype html>
 <html lang="pt">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Digital Store NV — Chegou a Tua Hora de Vencer</title>
+  <title>Loja Oficial NV — Ebook</title>
   <link rel="stylesheet" href="styles.css" />
-  <meta name="description" content="Ebook 50 Ideias de Negócio — passo a passo para começar a lucrar em Angola.">
 </head>
 <body>
-<!-- BOT DE VENDAS -->
-<div id="chat-container">
-    <div id="chat">
-        <div class="bot-msg">Olá! 👋 Sou o assistente automático de vendas. Posso ajudar?</div>
-    </div>
-
-    <div id="chat-input">
-        <input type="text" id="mensagem" placeholder="Escreve aqui..." />
-        <button onclick="enviar()">Enviar</button>
-    </div>
-</div>
-<script src="script.js"></script>
-<header class="topbar">
-  <div class="container">
-    <div class="brand">Digital Store NV</div>
-    <nav class="menu">
-      <a href="#hero">Início</a>
-      <a href="#ebook">Ebook</a>
-      <a href="#beneficios">Benefícios</a>
-      <a href="#autor">Sobre</a>
-      <a href="#pagamento">Pagar</a>
-    </nav>
+  <!-- top bot (chat) -->
+  <div class="chat-bar">
+    <div class="chat-text">Olá! 👋 Sou o assistente automático de vendas. Posso ajudar?</div>
+    <button id="chatBtn" class="btn small">Abrir WhatsApp</button>
   </div>
-</header>
 
-<section id="hero" class="hero">
-  <div class="container hero-inner">
-    <div class="hero-left">
-      <h1>CHEGOU A TUA HORA DE VENCER</h1>
-      <p class="tagline">50 IDEIAS DE NEGÓCIO aplicáveis em Angola — passo a passo para começar a lucrar.</p>
+  <header class="site-header">
+    <div class="container">
+      <h1>Loja Oficial NV</h1>
+      <nav class="nav">
+        <a href="#ebook">Ebook</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#pagar">Pagar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="hero" class="hero">
+      <h2>CHEGOU A TUA HORA DE VENCER</h2>
+      <p class="lead">50 IDEIAS DE NEGÓCIO aplicáveis em Angola — passo a passo para começar a lucrar.</p>
+
       <div class="price">Lançamento: <strong>5.000 Kz</strong></div>
-      <div class="cta-row">
-        <a class="btn btn-gold" href="#pagamento">PAGAR AGORA — 5.000 Kz</a>
-        <a class="btn btn-outline" href="https://wa.me/244972898156?text=Quero+comprar+o+Ebook+Chegou+a+Tua+Hora+de+Vencer" target="_blank">Enviar Mensagem</a>
+
+      <div class="ctas">
+        <!-- WhatsApp payment CTA -->
+        <a id="whatsappPay" class="btn large" href="#">PAGAR AGORA — 5.000 Kz</a>
+
+        <!-- direct download (only works after you upload ebook.pdf to repo) -->
+        <a id="downloadEbook" class="btn outline" href="ebook.pdf" download>Download do Ebook</a>
       </div>
-      <ul class="highlights">
-        <li>50 ideias práticas e testadas</li>
-        <li>Baixo investimento inicial</li>
-        <li>Modelos fáceis de implementar</li>
+    </section>
+
+    <section id="ebook" class="section">
+      <h3>Ebook — Chegou a Tua Hora de Vencer</h3>
+      <p>Manual prático com 50 ideias adaptadas à realidade de Angola. Baixa e começa já.</p>
+
+      <div class="cover-wrap">
+        <img src="file_00000000057c71f594341f33c89d09e9.png" alt="Capa do Ebook" class="cover" />
+      </div>
+
+      <ul>
+        <li>Modelos simples de execução</li>
+        <li>Exemplos reais em Angola</li>
+        <li>Checklist para começar em 7 dias</li>
       </ul>
-    </div>
 
-    <div class="hero-right">
-      <img class="cover" src="file_00000000057c71f594341f33c89d09e9.png" alt="Capa do Ebook — Chegou a Tua Hora de Vencer">
-    </div>
-  </div>
-</section>
+      <p><strong>Preço:</strong> 5.000 Kz</p>
+      <p><a href="#pagar">Comprar pelo Multicaixa</a></p>
+    </section>
 
-<main>
-  <section id="ebook" class="section card">
+    <section id="pagar" class="section">
+      <h3>Pagamento — Multicaixa Express</h3>
+      <p><strong>Beneficiário:</strong> Narciso Virgílio Salgueiro</p>
+      <p><strong>Conta (Multicaixa Express):</strong> 972 898 156</p>
+      <p><strong>Valor:</strong> 5.000 Kz</p>
+
+      <p>Depois de pagar, volta aqui e envia o comprovativo no formulário — validamos e enviamos o link do download.</p>
+
+      <!-- Button to open Google Form (replace the href with your Google Form link) -->
+      <p>
+        <a id="sendProof" class="btn" href="https://docs.google.com/forms/d/COLOCA_AQUI_O_LINK_DO_TEU_FORM" target="_blank">ENVIAR COMPROVATIVO (Formulário)</a>
+      </p>
+    </section>
+
+    <section id="sobre" class="section">
+      <h3>Sobre</h3>
+      <p>Narciso Virgílio — empreendedor angolano. Missão: ajudar outros a gerarem rendimento diário com ideias simples.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
     <div class="container">
-      <h2>Ebook — Chegou a Tua Hora de Vencer</h2>
-      <p>Um manual prático com 50 ideias de negócio adaptadas à realidade de Angola, com passos e modelos para começar já.</p>
-
-      <div class="product">
-        <img src="file_00000000057c71f594341f33c89d09e9.png" alt="Capa do Ebook" class="product-cover">
-        <div class="product-info">
-          <h3>O que vais encontrar</h3>
-          <ul>
-            <li>Modelos simples de execução</li>
-            <li>Exemplos reais em Angola</li>
-            <li>Checklist para começar em 7 dias</li>
-            <li>Bónus prático para divulgação rápida</li>
-          </ul>
-          <div class="price-block">
-            <div class="price-big">5.000 Kz</div>
-            <a class="btn btn-gold" href="#pagamento">Pagar pelo Multicaixa</a>
-          </div>
-        </div>
-      </div>
+      <p>© 2025 Loja Oficial NV — Todos os direitos reservados</p>
+      <p>Contacto: <a href="tel:+244972898156">+244 972 898 156</a></p>
     </div>
-  </section>
+  </footer>
 
-  <section id="beneficios" class="section">
-    <div class="container">
-      <h2>Por que este ebook funciona</h2>
-      <div class="benefits-grid">
-        <div class="benefit">Prático e direto — sem enrolação</div>
-        <div class="benefit">Focado no mercado angolano</div>
-        <div class="benefit">Baixo custo de implementação</div>
-        <div class="benefit">Resultados rápidos</div>
-      </div>
-    </div>
-  </section>
-
-  <section id="autor" class="section card">
-    <div class="container author-row">
-      <img class="author-photo" src="file_00000000057c71f594341f33c89d09e9.png" alt="Narciso Virgílio — CEO NV">
-      <div>
-        <h3>Narciso Virgílio Salgueiro — CEO NV</h3>
-        <p>Sou empreendedor angolano e autor deste guia prático. Ajudo pessoas a transformarem ideias simples em negócios lucrativos.</p>
-        <a class="btn btn-outline" href="contactos.html">Contactar</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="pagamento" class="section card payment-section">
-    <div class="container">
-      <h2>Pagamento — Multicaixa Express</h2>
-      <div class="payment-grid">
-        <div class="payment-instructions">
-          <p><strong>Beneficiário:</strong> Narciso Virgílio Salgueiro</p>
-          <p><strong>Conta (Multicaixa Express):</strong> <strong>972 898 156</strong></p>
-          <p><strong>Valor:</strong> 5.000 Kz</p>
-          <p><strong>Descrição:</strong> Pagamento do Ebook — Chegou a Tua Hora de Vencer</p>
-          <p>Depois de pagar, volta aqui e envia o comprovativo no formulário — validamos e enviamos o link de download.</p>
-        </div>
-
-        <div class="payment-form">
-          <label>Nome completo</label>
-          <input id="buyerName" type="text" placeholder="Seu nome completo" />
-          <label>Upload do comprovativo</label>
-          <input id="proofFile" type="file" accept="image/*" />
-          <button id="sendProof" class="btn btn-gold">ENVIAR COMPROVATIVO</button>
-          <p class="muted">Ao enviar, validaremos e enviaremos o link do e-book via WhatsApp.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="thanks" class="section card" style="display:none;">
-    <div class="container">
-      <h2>Obrigado — Pedido recebido</h2>
-      <p>Vamos validar o comprovativo. Se estiver tudo correcto, o link será enviado por WhatsApp.</p>
-      <a id="downloadLink" class="btn btn-outline" href="assets/ebook.pdf" download>Baixar Ebook (após validação)</a>
-    </div>
-  </section>
-</main>
-
-<footer class="sitefoot">
-  <div class="container">
-    <div>© 2025 Digital Store NV</div>
-    <div>Contacto: <a href="https://wa.me/244972898156">+244 972 898 156</a></div>
-  </div>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
-<script src="//code.tidio.co/p28kxgqpzhlcblc2q2rq6jfnkkwmt5vn.js" async></script>
